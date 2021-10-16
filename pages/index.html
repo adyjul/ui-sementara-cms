@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Page</title>
+    <link rel="stylesheet" href="../pages/css/style.css">
+
+    
+</head>
+<body>
+
+    <div id="pages">
+        
+        <div class="header-pages">
+            
+        </div>
+
+        
+
+
+
+        <div class="content-pages">
+
+            <div class="modal-contents">
+              <div class="modal fade" id="modalContent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="12">
+                        <label class="form-check-label" for="exampleRadios2">
+                          Text
+                        </label>
+                      </div> 
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="6">
+                        <label class="form-check-label" for="exampleRadios2">
+                          Card
+                        </label>
+                      </div>
+                    </div>                    
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="content-layout">
+                <div class="content-row">
+                  
+                </div>
+            </div>
+
+            <div class="row tambah-element">
+                <i class="fas fa-plus tambah" data-toggle="modal" data-target="#exampleModalCenter"></i>        
+            </div>
+        </div>
+                  
+        <div class="footer-pages">
+            
+        </div>
+
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Tambah Konten</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>                             
+                    <label for="" class="font-weight-bold">Pilih Layout</label>                    
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="12">
+                      <label class="form-check-label" for="exampleRadios2">
+                        1 Kolom
+                      </label>
+                    </div> 
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="6">
+                      <label class="form-check-label" for="exampleRadios2">
+                        2 Kolom
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="4">
+                      <label class="form-check-label" for="exampleRadios2">
+                        3 Kolom
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="3">
+                      <label class="form-check-label" for="exampleRadios2">
+                        4 Kolom
+                      </label>
+                    </div> 
+                    <div class="form-group"></div>                                
+                </form>                
+                <button type="reset" class="btn btn-danger" data-dismiss="modal" >Cancel</button>
+                <button type="submit" class="btn btn-primary simpan" data-dismiss="modal">Simpan</button>
+              </div>
+            </div>
+          </div>
+
+    </div>
+            
+    <script src="../pages/js/jquery-3.6.0.min.js"></script>
+    <script src="../pages/js/mini.cms.js"></script>
+
+    <script>
+        $(".header-pages").load("../pages/header.html")
+        $(".footer-pages").load("../pages/footer.html")
+
+       
+    </script>
+
+</body>
+</html>
