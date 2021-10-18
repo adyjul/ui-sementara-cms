@@ -8,10 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/dataTable.bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/summernote-bs4.css">
     <title>Bismillah CMS</title>
 	
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
@@ -30,33 +31,31 @@
     <nav class="fixed-top align-top sidebar-overflow" id="sidebar-wrapper" role="navigation">
        <div class="simplebar-content" style="padding: 0px; ">
 				<a class="sidebar-brand" href="index.html">
-          <p>Editor Page</p>
+          <p style="color: black;">Editor Page</p>
         </a>
 
         <!-- Items -->
 
 		<ul class="navbar-nav align-self-stretch nav-items" style="position: absolute; left: 0px; transition: all 0.5s ease !important; width: 100% !important;">
-	        
-            <li class="nav-item">
-                <a href="./index.html" class="nav-link">
-                  <i class="nav-icon fas fa-tachometer-alt"></i>
-                  <p>
-                    Dashboard                 
-                  </p>
-                </a>            
-            </li> 
 
-            <li class="nav-item ">
-                <a href="#" class="nav-link nav-sub" data-name="laman">
-                    <i class="far fa-address-card"></i>
-                  <p class="items">
-                    Laman                
-                  </p>
-                  <i class="fas fa-chevron-right"></i>
-                </a>            
-            </li>
-                                 
-
+              <form>         
+                <div class="form-group">
+                    <label>Margin</label>
+                    <input type="text" name="title" class="form-control" >
+                </div>
+                <div class="form-group">
+                    <label>Padding</label>
+                    <input type="text" name="picture" class="form-control">
+                </div>
+               
+                <div class="form-group">
+                    <label>Text</label>                 
+                    <div id="summernote"></div>
+                </div>            
+                 <button type="reset" class="btn btn-danger" data-dismiss="modal">Save</button>
+                 <button type="submit" class="btn btn-primary">Preview</button>
+           </form>
+            
 		</ul>
 
         <!-- end Items -->
@@ -173,14 +172,22 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>        
-    <script src="./js/custom.js"></script>           
+    <script src="./js/popper.js"></script>     
+    <script src="./js/bootstrap.js"></script>   
+    <script src="./js/custom.js"></script>  
+    <script src="./js/summernote-bs4.js"></script>         
 
-    <script>           
+    <script>
+
+      $(document).ready(function() {
         $(".content-preview").load("../pages/index.html") 
-
-      
-      
+        $('#summernote').summernote({
+          placeholder: 'Tulis Disini',
+        tabsize: 2,
+        height: 200
+        });
+      });
+             
         
     </script>
 

@@ -49,9 +49,7 @@ $(document).ready(function(){
         })
     }
 
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
+    
     
     $(".nav-some").click(function(){
         var value = $(this).attr("data-name");

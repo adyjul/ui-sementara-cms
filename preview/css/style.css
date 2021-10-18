@@ -28,7 +28,7 @@ sidebar
 	left: -50px;
     overflow-y: auto;
     overflow-x: hidden;
-    background: #222e3c;
+    background: #eeee;
     transition: all 0.5s ease;
 }
 
@@ -38,7 +38,7 @@ sidebar
 
 #sidebar-wrapper::-webkit-scrollbar {
     width: 8px;
-    background: #222e3c;
+    background: #f2f2f2;
 }
 
 #sidebar-wrapper::-webkit-scrollbar-thumb {
@@ -59,6 +59,15 @@ sidebar
     padding: 10px!important;
     font-size: 14px;
     color: #ced4da;
+}
+
+.navbar-nav{
+    padding: 20px;
+}
+
+.navbar-nav form label{
+    color: black;
+    font-weight: bold;
 }
 
 .navbar-nav > li > a ,.submenu-box ul li a{
@@ -126,7 +135,7 @@ sidebar
 
 
 .toggled#sidebar-wrapper {
-    width:370px !important;
+    width:500px !important;
     height: 100%;
      left: 0px;
     overflow-y:auto;
@@ -196,6 +205,15 @@ sidebar
 ----------------------*/
 
 
+/* modal */
+
+
+.modal-backdrop{
+    z-index: 999;
+}
+
+/* end modal */
+
 
 /* topbar */
 
@@ -248,7 +266,7 @@ sidebar
 }
 
  .toggled#page-content-wrapper{
-  margin-left:370px;
+  margin-left:500px;
   transition: all 0.5s ease;
  }
  
